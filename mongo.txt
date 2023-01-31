@@ -1,0 +1,34 @@
+> show dbs
+admin   0.000GB
+config  0.000GB
+local   0.000GB
+> use contact
+switched to db contact
+> db.createCollection(contaclist)
+uncaught exception: ReferenceError: contaclist is not defined :
+@(shell):1:1
+> db.createCollection("contactlist")
+{ "ok" : 1 }
+> db.contactlist.insertMany([{}])
+{
+        "acknowledged" : true,
+        "insertedIds" : [
+                ObjectId("63d2d20848162a5bda719141")
+        ]
+}
+> db.contactlist.insertOne({Last name : "ben lahmer" ,first nam })  db.contactlist.insertOne({Last name : "ben lahmer" ,first name }) db.contactlist.insertOne({Last name : "ben lahmer" ,first names })db.contactlist.insertOne({Lastdb.contactlist.insertOnedb.contactlist.insertOne({Last name : "ben lahmer" ,first namesdb.contactlist.insertOne({Last name : "ben lahmer" ,first namesdb.contactlist.insertOne({Last name : "ben lahmer" ,first namesdb.contactlist.insertOne({Last name : "ben lahmer" ,first namesdb.contactlist.insertOne({Last name : "ben lahmer" ,first namesdb.contactlist.insertOne({Last name : "ben lahmer" ,first namesdb.contactlist.insertOne({Last name : "ben lahmer" ,first namesdb.contactlist.insertOne({Last name : "ben lahmer" ,first namesdb.contactlist.insertOne({Last name : "ben lahmer" ,first names:"feres",email:"fares@gmail.com",age :26 })
+uncaught exception: SyntaxError: missing : after property id :
+@(shell):1:31
+> db.contactlist.find().pretty
+function() {
+    this._prettyShell = true;
+    return this;
+}
+> db.contactlist.find().prett()
+uncaught exception: TypeError: db.contactlist.find(...).prett is not a function :
+@(shell):1:1
+> db.contactlist.find().pretty()
+{ "_id" : ObjectId("63d2d20848162a5bda719141") }
+> db.contactlist.insertOne([{last name:"ben lahmer ",first name:"fares",email:"fares@gmail.com ",age:26 } ]
+... db.contactlist.find()
+...
